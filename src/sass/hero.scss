@@ -6,20 +6,43 @@
   align-items: center;
 }
 
+.discription-site__decoration {
+  color: $accent-color;
+}
+
 .discription-site__heading {
-  font-size: 38px;
+  font-size: 68px;
   line-height: 2.2;
+  font-weight: 900;
+  letter-spacing: 8px;
+
+  // &::first-letter {
+  //   // font-family: $logo-font;
+  //   font-size: 58px;
+  //   font-weight: 900;
+  // }
 }
 
 .discription-site__acquaintance {
-  font-size: 18px;
+  font-size: 38px;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sales-button {
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  width: 50px;
+  height: 20%;
+  background-color: $active-color;
+  opacity: 0.6;
 }
 
 .hero {
-  // min-width: 300px;
-  width: 100%;
+  max-width: 100vw;
   background-image: url(../images/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -38,6 +61,108 @@
   }
 
   66% {
-    background-image: url(../images/hero4.jpg);
+    background-image: url(../images/hero3.jpg);
+  }
+}
+
+@media screen and (max-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero@2x.jpg);
+  }
+  @keyframes hero__img {
+    33% {
+      background-image: url(../images/hero2@2x.jpg);
+    }
+
+    66% {
+      background-image: url(../images/hero3@2x.jpg);
+    }
+  }
+}
+
+// Mobile graphic
+
+@media screen and (max-width: 747px) {
+  .hero {
+    background-image: url(../images/hero__mobile.jpg);
+  }
+
+  @keyframes hero__img {
+    33% {
+      background-image: url(../images/hero2__mobile.jpg);
+    }
+
+    66% {
+      background-image: url(../images/hero3__mobile.jpg);
+    }
+  }
+
+  .discription-site__heading {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    // &::first-letter {
+    //   // font-family: $logo-font;
+    //   font-size: 58px;
+    //   font-weight: 900;
+    // }
+  }
+
+  .discription-site__acquaintance {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero__mobile@2x.jpg);
+    }
+
+    @keyframes hero__img {
+      33% {
+        background-image: url(../images/hero2__mobile@2x.jpg);
+      }
+
+      66% {
+        background-image: url(../images/hero3__mobile@2x.jpg);
+      }
+    }
+  }
+}
+
+// tablet graphic
+
+@media screen and (min-width: 748px) and (max-width: 941px) {
+  .hero {
+    background-image: url(../images/hero__tablet.jpg);
+  }
+
+  @keyframes hero__img {
+    33% {
+      background-image: url(../images/hero2__tablet.jpg);
+    }
+
+    66% {
+      background-image: url(../images/hero3__tablet.jpg);
+    }
+  }
+  @media screen and (max-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero__tablet@2x.jpg);
+    }
+
+    @keyframes hero__img {
+      33% {
+        background-image: url(../images/hero2__tablet@2x.jpg);
+      }
+
+      66% {
+        background-image: url(../images/hero3__tablet@2x.jpg);
+      }
+    }
   }
 }

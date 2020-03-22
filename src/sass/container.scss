@@ -1,25 +1,35 @@
-@media screen and (max-width: 747px) {
-  .container {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 748px) and (max-width: 941px) {
-  .container {
-    width: 728px;
-  }
-}
-
-@media screen and (max-width: 1190px) {
-  .container {
-    width: 1170;
-  }
-}
+// mobile version
 
 .container {
+  min-width: 300px;
+  max-width: 1170px;
   margin: 0;
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 747px) {
+  .container {
+    max-width: 727px;
+  }
+}
+
+// tablet version
+
+@media screen and (min-width: 748px) and (max-width: 941px) {
+  .container {
+    min-width: 728px;
+    max-width: 921px;
+  }
+}
+
+// desktop version
+
+@media screen and (min-width: 942px) and (max-width: 1190px) {
+  .container {
+    min-width: 942px;
+  }
 }

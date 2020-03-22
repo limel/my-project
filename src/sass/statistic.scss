@@ -1,0 +1,66 @@
+.numbers {
+  display: flex;
+  align-items: center;
+  height: 240px;
+}
+
+.numbers__list {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.numbers__number {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.number__discription {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.numbers__icons {
+  width: 50px;
+  height: 50px;
+  transform: scale(1);
+  transition: 350ms;
+}
+
+.numbers__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.numbers__item:hover .numbers__icons,
+.numbers__item:focus .numbers__icons {
+  transition: 350ms;
+  transform: scale(1.4);
+}
+
+.numbers__item:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 747px) {
+  .numbers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .numbers__list {
+    flex-direction: column;
+  }
+
+  .numbers__icons {
+    width: 40px;
+    height: 40px;
+  }
+
+  .numbers__item {
+    margin-right: 0;
+  }
+}

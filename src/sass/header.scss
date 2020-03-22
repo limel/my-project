@@ -1,6 +1,4 @@
 .page-header {
-  min-width: 942px;
-  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   position: sticky;
@@ -49,6 +47,11 @@
 }
 
 @media screen and (max-width: 747px) {
+  .page-header {
+    min-width: 300px;
+    max-width: 727px;
+  }
+
   .main-navigation {
     justify-content: space-around;
   }
@@ -89,5 +92,19 @@
 
   .button-menu:hover {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 941px) {
+  .page-header {
+    min-width: 728px;
+    max-width: 921px;
+  }
+}
+
+@media screen and (min-width: 942px) and (max-width: 1190px) {
+  .page-header {
+    min-width: 942px;
+    max-width: 1170px;
   }
 }
