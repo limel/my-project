@@ -11,28 +11,28 @@
   color: var(--text-color);
 }
 
-@media screen and (min-width: 748px) {
-  .visually-hidden--desktop {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-}
+// @media screen and (min-width: 748px) {
+//   .visually-hidden--desktop {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+//   }
+// }
 
-@media screen and (max-width: 747px) {
-  .visually-hidden--mobile {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-}
+// @media screen and (max-width: 747px) {
+//   .visually-hidden--mobile {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+//   }
+// }

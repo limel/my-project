@@ -43,6 +43,7 @@
 }
 
 .button-menu {
+  display: none;
   height: 25px;
   width: 50px;
 }
@@ -51,6 +52,14 @@
   .page-header {
     min-width: 300px;
     max-width: 727px;
+  }
+
+  .main-navigation__list {
+    display: none;
+
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .main-navigation {
