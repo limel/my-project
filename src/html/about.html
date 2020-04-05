@@ -2,15 +2,51 @@
   <div class="container">
     <ul class="about__list list">
       <li class="about__item">
-        <picture>
-          <img
-            src="./images/about-img(2)1280.jpg"
-            alt="beach"
-            width=""
-            height=""
-            class="about__img"
-          />
-        </picture>
+        <div class="about__img--scale">
+          <picture>
+            <!-- webp mobile -->
+            <source
+              srcset="./images/beach--mobile.webp 1x, ./images/beach.webp 2x"
+              media="(max-width: 747px)"
+              type="image/webp"
+            />
+
+            <!-- jpg mobile -->
+
+            <source
+              srcset="./images/beach--mobile.jpg 1x, ./images/beach.jpg 2x"
+              media="(max-width: 747px)"
+            />
+
+            <!-- webp tablet -->
+            <source
+              srcset="./images/beach--mobile.webp 1x, ./images/beach.webp 2x"
+              media="(min-width: 748px) and (max-width: 941px)"
+              type="image/webp"
+            />
+
+            <!-- jpg tablet -->
+
+            <source
+              srcset="./images/beach--mobile.jpg 1x, ./images/beach.jpg 2x"
+              media="(min-width: 748px) and (max-width: 941px)"
+            />
+
+            <!-- webp desktop -->
+            <source
+              srcset="./images/beach.webp 1x, ./images/beach@2x.webp 2x"
+              type="image/webp"
+            />
+
+            <!-- jpg desktop -->
+            <img
+              src="./images/beach.jpg"
+              srcset="./images/beach@2x.jpg 2x"
+              alt="beach"
+              class="about__img"
+            />
+          </picture>
+        </div>
 
         <p class="about__discription">
           Services We will facilitate your travel preparations. The main task of
@@ -23,22 +59,77 @@
         </p>
       </li>
       <li class="about__item">
-        <picture>
-          <img
-            src="./images/about-img1280.jpg"
-            alt="beach with coctail"
-            width=""
-            height=""
-            class="about__img"
-          />
-        </picture>
-
         <p class="about__discription">
           If you want to plan a unique itinerary, choose any number of days of
           travel, several destinations, changing modes of transport from ship to
           plane, from plane to train - then here we will share our experiences
           and save your time.
         </p>
+
+        <div class="about__img--scale">
+          <picture>
+            <!-- webp mobile -->
+
+            <source
+              srcset="
+                ./images/beach_palm--mobile.webp 1x,
+                ./images/beach_palm.webp         2x
+              "
+              type="image/webp"
+              media="(max-width:747px)"
+            />
+
+            <!-- jpg mobile -->
+
+            <source
+              srcset="
+                ./images/beach_palm--mobile.jpg 1x,
+                ./images/beach_palm.jpg         2x
+              "
+              media="(max-width: 747px)"
+            />
+
+            <!-- webp tablet -->
+
+            <source
+              srcset="
+                ./images/beach_palm--mobile.webp 1x,
+                ./images/beach_palm.webp         2x
+              "
+              type="image/webp"
+              media="(min-width: 748px) and (max-width: 941px)"
+            />
+
+            <!-- jpg tablet -->
+
+            <source
+              srcset="
+                ./images/beach_palm--mobile.jpg 1x,
+                ./images/beach_palm.jpg         2x
+              "
+              media="(min-width: 748px) and (max-width: 941px)"
+            />
+
+            <!-- webp desktop -->
+
+            <source
+              srcset="
+                ./images/beach_palm.webp    1x,
+                ./images/beach_palm@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <!-- jpg desktop -->
+
+            <img
+              src="./images/beach_palm.jpg"
+              srcset="./images/beach_palm@2x.jpg 2x"
+              alt="beach"
+              class="about__img"
+            />
+          </picture>
+        </div>
       </li>
     </ul>
   </div>
